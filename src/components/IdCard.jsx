@@ -1,6 +1,6 @@
 const IdCard = ({lastName, firstName, gender, height, birth, picture}) => {
     return(
-        <div className="border">
+        <div className="idCard">
             <img src={picture} className="picture" alt="fotoCard" />
             <div className="text">
                 <strong>First Name: </strong> {firstName} <br />
