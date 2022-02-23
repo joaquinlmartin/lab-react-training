@@ -7,6 +7,12 @@ import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from "./components/DriverCard";
 import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
+import FaceBook from './components/FaceBook';
+import profiles from './data/berlin.json';
 
 function App() {
   return (
@@ -104,7 +110,35 @@ function App() {
         />
       </div>
       <div>
-        <LikeButton />
+        <p class="likes"><LikeButton /><LikeButton /></p>
+      </div>
+      <div>
+        <ClickablePicture />
+      </div>
+      <div>
+        <Dice />
+      </div>
+      <div>
+        <Carousel />
+      </div>
+      <div>
+        <NumbersTable limit={12} />
+      </div>
+      <div>
+      {profiles.map((element, i) => {
+        return (
+          <>
+            <FaceBook
+              img={element.img}
+              key={i}
+              firstName={element.firstName}
+              lastName={element.lastName}
+              country={element.country}
+              isStudent={element.isStudent}
+            />
+          </>
+        );
+      })}
       </div>
     </div>
   );
