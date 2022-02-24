@@ -5,8 +5,7 @@ export default function FaceBook(props) {
         <p>First name:{props.firstName}</p>
         <p>Last name:{props.lastName}</p>
         <p>Country:{props.country}</p>
-        <p>Type:{props.isStudent}</p>
+        <p>Type:{props.isStudent ? "Student" : "Teacher"}</p>
       </div>
     );
   }
-  
