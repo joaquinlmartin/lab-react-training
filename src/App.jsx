@@ -110,19 +110,19 @@ function App() {
         />
       </div>
       <div>
-        <p class="likes"><LikeButton /><LikeButton /></p>
+        <p class="likes"><LikeButton/><LikeButton/></p>
       </div>
       <div>
-        <ClickablePicture />
+        <ClickablePicture/>
       </div>
       <div>
         <Dice />
       </div>
       <div>
-        <Carousel />
+        <Carousel/>
       </div>
       <div>
-        <NumbersTable limit={12} />
+        <NumbersTable limit={12}/>
       </div>
       <div>
       {profiles.map((element, i) => {
